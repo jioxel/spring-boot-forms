@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title th:text="${title}"></title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+     <h2 th:text="${title}"></h2>
+     <p th:text="${usuario.id}"></p>
+     <p th:text="${usuario.nombre}"></p>
+     <p th:text="${usuario.apellido}"></p>
+     <p th:text="${usuario.username}"></p>
+     <p th:text="${usuario.password}"></p>
+     <p th:text="${usuario.email}"></p>
+</body>
+</html>
