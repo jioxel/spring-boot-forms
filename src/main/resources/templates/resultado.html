@@ -13,5 +13,8 @@
      <p th:text="${usuario.username}"></p>
      <p th:text="${usuario.password}"></p>
      <p th:text="${usuario.email}"></p>
+     <p th:text="${usuario.cuenta}"></p>
+     <p th:text="${#dates.format(usuario.fechaNacimiento, 'dd/MM/yyyy')}"></p>
+     <p th:text="${usuario.pais.id}"></p>
 </body>
 </html>
