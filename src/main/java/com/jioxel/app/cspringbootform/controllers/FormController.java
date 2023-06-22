@@ -128,6 +128,8 @@ public class FormController {
           return Arrays.asList("Hombre", "Mujer");
      }
 
+
+
      @GetMapping("/form")
      public String form(Model model) {
           Usuario usuario = new Usuario();
@@ -143,6 +145,8 @@ public class FormController {
           
           return "form";
      }
+
+     
      @PostMapping("/form")
      public String recibirFormulario(@Valid Usuario usuario,BindingResult result,Model model //se meten los datos del formulario solos al objeto Usuario
           // @RequestParam("username") String username,

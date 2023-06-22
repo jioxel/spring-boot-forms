@@ -6,6 +6,7 @@
      <title th:text="${title}"></title>
 </head>
 <body style="font-family: Arial, Helvetica, sans-serif;">
+     <section th:replace="components/tiempo :: interceptor"></section>
      <h2 th:text="${title}"></h2>
      <p th:text="${usuario.id}"></p>
      <p th:text="${usuario.nombre}"></p>
