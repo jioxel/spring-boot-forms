@@ -16,5 +16,13 @@
      <p th:text="${usuario.cuenta}"></p>
      <p th:text="${#dates.format(usuario.fechaNacimiento, 'dd/MM/yyyy')}"></p>
      <p th:text="${usuario.pais.id}"></p>
+     <p th:text="${usuario.pais.codigo}"></p>
+     <p th:text="${usuario.pais.nombre}"></p>
+     <ul>
+          <li th:each="role: ${usuario.roles}" th:text="${role.id} + ': ' + ${role.role} +' -> ' + ${role.nombre}"></li>
+     </ul>
+     <p th:text="'Habilitado: ' +${usuario.habilitar}"></p>
+     <p th:text="'Genero: ' +${usuario.genero}"></p>
+     <p th:text="'Valor secreto: ' +${usuario.valorSecreto}"></p>
 </body>
 </html>
