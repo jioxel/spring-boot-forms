@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <body>
-     <section th:fragment="interceptor">
+     <section th:fragment="interceptor" th:if="${timepoTranscurrido != null}">
           <div>
                <span th:text="'Timepo Transcurrido: ' + ${timepoTranscurrido}"></span>
           </div>
